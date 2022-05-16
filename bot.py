@@ -48,42 +48,54 @@ def main():
     schedule.every().day.at("07:50").do(
         kakao_sendtext,
         kakao_opentalk_name,
-        "[🤖STUDY안내봇]\n곧 1부가 시작됩니다! 오늘도 좋은 하루 되세요! 🌼",
+        "[🤖 STUDY 안내 봇]\n\n곧 1부가 시작됩니다! 오늘도 좋은 하루 되세요! 🌼\n\nhttps://discord.gg/tAHBUKQ2jc",
     )
 
     schedule.every().day.at("11:59").do(open_chatroom, kakao_opentalk_name)
     schedule.every().day.at("12:00").do(
-        kakao_sendtext, kakao_opentalk_name, "[🤖STUDY안내봇]\n1부가 종료되었습니다. 점심 드시고 만나요! 🍚"
+        kakao_sendtext,
+        kakao_opentalk_name,
+        "[🤖 STUDY 안내 봇]\n\n1부가 종료되었습니다. 점심 드시고 만나요! 🍚",
     )
 
     schedule.every().day.at("12:49").do(open_chatroom, kakao_opentalk_name)
     schedule.every().day.at("12:50").do(
-        kakao_sendtext, kakao_opentalk_name, "[🤖STUDY안내봇]\n곧 2부가 시작됩니다!"
+        kakao_sendtext,
+        kakao_opentalk_name,
+        "[🤖 STUDY 안내 봇]\n\n곧 2부가 시작됩니다!\n\nhttps://discord.gg/tAHBUKQ2jc",
     )
 
     schedule.every().day.at("16:59").do(open_chatroom, kakao_opentalk_name)
     schedule.every().day.at("17:00").do(
-        kakao_sendtext, kakao_opentalk_name, "[🤖STUDY안내봇]\n2부가 종료되었습니다. 저녁 드시고 만나요! 🥘"
+        kakao_sendtext,
+        kakao_opentalk_name,
+        "[🤖 STUDY 안내 봇]\n\n2부가 종료되었습니다. 저녁 드시고 만나요! 🥘",
     )
 
     schedule.every().day.at("17:49").do(open_chatroom, kakao_opentalk_name)
     schedule.every().day.at("17:50").do(
-        kakao_sendtext, kakao_opentalk_name, "[🤖STUDY안내봇]\n곧 3부가 시작됩니다!"
+        kakao_sendtext,
+        kakao_opentalk_name,
+        "[🤖 STUDY 안내 봇]\n\n곧 3부가 시작됩니다!\n\nhttps://discord.gg/tAHBUKQ2jc",
     )
 
     schedule.every().day.at("21:59").do(open_chatroom, kakao_opentalk_name)
     schedule.every().day.at("22:00").do(
-        kakao_sendtext, kakao_opentalk_name, "[🤖STUDY안내봇]\n3부가 종료되었습니다. 고생하셨습니다! 💪"
+        kakao_sendtext, kakao_opentalk_name, "[🤖 STUDY 안내 봇]\n\n3부가 종료되었습니다. 고생하셨습니다! 💪"
     )
 
     schedule.every().day.at("22:49").do(open_chatroom, kakao_opentalk_name)
     schedule.every().day.at("22:50").do(
-        kakao_sendtext, kakao_opentalk_name, "[🤖STUDY안내봇]\n곧 4부가 시작됩니다!"
+        kakao_sendtext,
+        kakao_opentalk_name,
+        "[🤖 STUDY 안내 봇]\n\n곧 4부가 시작됩니다!\n\nhttps://discord.gg/tAHBUKQ2jc",
     )
 
     schedule.every().day.at("02:59").do(open_chatroom, kakao_opentalk_name)
     schedule.every().day.at("03:00").do(
-        kakao_sendtext, kakao_opentalk_name, "[🤖STUDY안내봇]\n4부가 종료되었습니다. 내일 또 만나요! 🌙"
+        kakao_sendtext,
+        kakao_opentalk_name,
+        "[🤖 STUDY 안내 봇]\n\n4부가 종료되었습니다. 내일 또 만나요! 🌙",
     )
 
     while True:
@@ -92,5 +104,5 @@ def main():
 
 
 if __name__ == "__main__":
-    print("[🤖STUDY안내봇] 일하는 중 ...")
+    print("[🤖 STUDY 안내 봇] 일하는 중 ...")
     main()
